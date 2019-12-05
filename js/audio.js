@@ -12,6 +12,7 @@ function playAudio(input) {
     for (var i = 0; i < input.length; i++) {
         playlist[i] = "wav/" + input[i] + ".mp3";
     }
+    nextAudio();
     IntervalControl = setInterval(nextAudio, 1000);
 }
 
